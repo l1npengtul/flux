@@ -98,7 +98,7 @@ in {
             if conf.proxy.enable
             then
               if (conf.proxy.backend == "playit")
-              then "${pkgs.playit}/bin/playit-cli -s &"
+              then "${pkgs.playit}/bin/playit-cli -s"
               else if (conf.proxy.backend == "ngrok")
               then "${
                 if (conf.proxy.tokenFile != null)
